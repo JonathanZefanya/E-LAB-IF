@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+}
+
+#console {
+    font-family: courier, monospace;
+    color: #fff;
+    width: 750px;
+    margin: 100px auto 0 auto;
+    font-size: 14px;
+}
+
+a {
+    color: #0bc;
+    text-decoration: none;
+}
+
+#a {
+    color: #0f0;
+}
+
+#c {
+    color: #0bc;
+}
+
+#b {
+    color: #ff0096;
+}
+
+#d {
+    color: #ff0000;
+}
+
+#op {
+    color: #888888;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+td {
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.success {
+    color: #0f0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+button,
+.button {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+pre {
+    border: 1px solid #ffffff;
+    padding: 6px;
+    width: 100%;
+    overflow: scroll;
+    max-height: 250px;
+}

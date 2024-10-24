@@ -2,15 +2,28 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
 {
-    protected $table = 'courses';
-    protected $guarded = [];
-    
-    public function student()
+    use HasFactory;
+
+    protected $fillable = [
+        "name",
+        "slug",
+        "description",
+        "duration",
+        "published"
+    ];
+
+    public function courseSections()
     {
-        return $this->belongsToMany(Student::class, 'course_student', 'student_id', 'course_id');
+        return $this->hasMany(CourseSection::class);
+    }
+
+    public function lessons()
+    {
+        return $this->hasManyThrough(CourseLesson::class, CourseSection::class);
     }
 }
